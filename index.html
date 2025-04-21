@@ -4,13 +4,152 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+      }
+      .scroll-menu {
+        position: fixed;
+        word-spacing: 4vw;
+      }
+      .scroll-menu a {
+        color: aliceblue;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+        margin-bottom: 4vh;
+      }
+      .header_backdrop {
+        background-image: url("https://www.panathenaicstadium.gr/wp-content/uploads/2023/12/Grid.jpg");
+        background-blend-mode: overlay;
+        width: 99vw;
+        height: 100vh;
+        z-index: -100;
+        background-color: slategrey;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(25vw, 1fr)
+        ); /* Responsive columns */
+        gap: 12px; /* Space between grid items */
+      }
+      .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .locations {
+        grid-template-columns: 3, 3;
+      }
+      h1,
+      p {
+        margin: 0px;
+      }
+    </style>
   </head>
+
   <body>
-    <img
-      alt=""
-      id="dimg_9ekFaPXWEv7LseMPvfCy0QQ_27"
-      src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcR9H73MtSbALscmpteNZz-hIc_E0W3lzkgtbTlYWWgnIPdTddi9wx7jmyh0Ckur0R-WEyTVcWJEJKfMbST1fksa7mBEjmyjnT4kS9hytQ"
-      data-ilt="1745218064976"
-    />
+    <div class="scroll-menu">
+      <ul>
+        <a>GREECE</a>
+        <a href="Locations">Places</a>
+        <a href="History">History</a>
+        <a href="Democracy">Islands</a>
+      </ul>
+    </div>
+    <header class="header_backdrop">
+      <p>Things To Do in Greece</p>
+    </header>
+    <main>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img
+            class=""
+            alt=""
+            id="dimg_24"
+            src="https://lh3.googleusercontent.com/p/AF1QipNFOKh2KZAdSsTVxVtJKcMDLU9Bcu19gL5LdOI=s294-w294-h220-n-k-no"
+            data-ilt="1745230463727"
+          />
+          <h1>Acropolis of Athens</h1>
+          <p>
+            The Acropolis is the crowning jewel of Athens and one of the most
+            important cultural sites in the world. This incredible, sprawling
+            complex was the birthplace of democracy and the most important
+            center of ancient Greece.
+          </p>
+        </div>
+        <div class="grid-item">
+          <img
+            class=""
+            alt=""
+            jsaction="rcuQ6b:npT2md;BUYwVb:QT8fkf;LsLGHf:iSvHDf;DdQV6c:QT8fkf"
+            jscontroller="R3fhkb"
+            src="https://lh3.googleusercontent.com/p/AF1QipNPZQqSdhFRfdXdofPrI2Tbvia6m4T1vd6rcwfq=s294-w294-h220-n-k-no"
+            data-ilt="1745230645593"
+          />
+          <h1>Meteora</h1>
+          <p>
+            The Greek word Meteora means “suspended in the air” and this phrase
+            aptly describes these remarkable Greek Orthodox monasteries. Many
+            centuries ago, on these gigantic rocks with the breathtaking
+            landscape reaching heights of more than 600 meters.
+          </p>
+        </div>
+        <div class="grid-item">
+          <img
+            class=""
+            alt=""
+            jsaction="rcuQ6b:npT2md;BUYwVb:QT8fkf;LsLGHf:iSvHDf;DdQV6c:QT8fkf"
+            jscontroller="R3fhkb"
+            src="https://lh3.googleusercontent.com/p/AF1QipOvf0YfFM7epWs0QMOu9b9zQ_BlHlTXU7vZ4Sh1=s294-w294-h220-n-k-no"
+            data-ilt="1745230772111"
+          />
+          <h1>Parthenon</h1>
+          <p>
+            The Parthenon is a temple to Athena in Athens, and the word comes
+            from a word meaning "women's chamber", itself coming from "παρθένος"
+            meaning "unmarried woman".
+          </p>
+        </div>
+        <div class="grid-item">
+          <img
+            class=""
+            alt=""
+            id="dimg_84"
+            src="https://lh3.googleusercontent.com/p/AF1QipObsc0N6i5REyLxHy-z--Z_UmIQcCKwbUXBvllI=s294-w294-h220-n-k-no"
+            data-ilt="1745230863631"
+          />
+          <h1>Temple of Olympian Zeus</h1>
+          <p>
+            The Temple of Zeus at Olympia was built sometime between 472 and 456
+            B.C. Dedicated to the king of the gods, Zeus, it was built upon a
+            much older religious site going back to the tenth or ninth century.
+          </p>
+        </div>
+        <div class="grid-item">
+          <img
+            class=""
+            alt=""
+            id="dimg_155"
+            src="https://lh3.googleusercontent.com/p/AF1QipNG1nqaioHHS8stfG4LPzXYRlMZ0lnQwy_N4256=s294-w294-h220-n-k-no"
+            data-ilt="1745230977070"
+          />
+          <h1>Panathenaic Stadium</h1>
+          <p>
+            TIL the Panathenaic Stadium, built in 330BC, is the only stadium
+            made entirely of marble, was excavated and used in the 1896
+            Olympics, and and is still used for events today. Its record
+            attendance of 80,000 was for a basketball game in 1968.
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
