@@ -3,27 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Greece</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <style>
-      body {
-        padding: 0px;
-        margin: 0px;
-      }
-      .scroll-menu {
-        position: fixed;
-        word-spacing: 4vw;
-      }
-      .scroll-menu a {
-        color: aliceblue;
-      }
-      header {
+      .backdrop {
         display: flex;
         align-items: center;
         justify-content: center;
         color: aliceblue;
-        margin-bottom: 4vh;
-      }
-      .header_backdrop {
         background-image: url("https://www.panathenaicstadium.gr/wp-content/uploads/2023/12/Grid.jpg");
         background-blend-mode: overlay;
         width: 99vw;
@@ -31,42 +18,22 @@
         z-index: -100;
         background-color: slategrey;
       }
-      .grid-container {
-        display: grid;
-        grid-template-columns: repeat(
-          auto-fit,
-          minmax(25vw, 1fr)
-        ); /* Responsive columns */
-        gap: 12px; /* Space between grid items */
-      }
-      .grid-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      .locations {
-        grid-template-columns: 3, 3;
-      }
-      h1,
-      p {
-        margin: 0px;
-      }
     </style>
   </head>
 
   <body>
-    <div class="scroll-menu">
+    <header class="scroll-menu">
       <ul>
-        <a>GREECE</a>
-        <a href="Locations">Places</a>
-        <a href="History">History</a>
+        <a href="index.html">GREECE</a>
+        <a href="index.html">Places</a>
+        <a href="History.html">History</a>
         <a href="Democracy">Islands</a>
       </ul>
-    </div>
-    <header class="header_backdrop">
-      <p>Things To Do in Greece</p>
     </header>
+    <div class="backdrop">
+      <p>WORDS THAT RHYME WITH GREECE</p>
+    </div>
+    <sub>words that rhyme with greece are geese grease cease peace</sub>
     <main>
       <div class="grid-container">
         <div class="grid-item">
